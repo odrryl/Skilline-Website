@@ -1,0 +1,169 @@
+.news {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0rem 140rem 247rem 140rem;
+
+    @include desktop-small {
+      padding-bottom: 100rem;
+    }
+
+    @include tablet {
+      padding-left: 40rem;
+      padding-right: 40rem;
+    }
+  }
+
+  &__group {
+    margin-top: 100rem;
+    display: flex;
+    gap: 120rem;
+    text-align: left;
+
+    @include desktop-small {
+      flex-direction: column;
+    }
+
+    @include mobile {
+      margin-top: 50rem;
+      gap: 60rem;
+    }
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+
+    &-tag {
+      font-weight: 500;
+      font-size: 20rem;
+      line-height: 180%;
+      letter-spacing: 0.02em;
+      color: var(--primary-color);
+
+      background: var(--light-orange);
+      border-radius: 80rem;
+      padding: 2rem 36rem;
+      margin-top: 40rem;
+      max-width: fit-content;
+      display: inline-block;
+      @include mobile {
+        font-size: 16rem;
+      }
+    }
+
+    &-title {
+      margin-top: 20rem;
+      font-weight: 500;
+      font-size: 26rem;
+      line-height: 180%;
+      color: var(--primary-color);
+      max-width: 609rem;
+
+      @include mobile {
+        font-size: 20rem;
+      }
+    }
+
+    &-desc {
+      max-width: 580rem;
+      font-weight: 400;
+      font-size: 20rem;
+      line-height: 180%;
+      letter-spacing: 0.02em;
+      color: var(--txt-color-3);
+      margin-top: 20rem;
+
+      @include mobile {
+        font-size: 16rem;
+      }
+    }
+
+    &-link {
+      margin-top: 28rem;
+      font-weight: 400;
+      font-size: 20rem;
+      line-height: 180%;
+      letter-spacing: 0.02em;
+      text-decoration: underline;
+      text-decoration-skip-ink: none;
+      color: var(--txt-color-3);
+
+      @include mobile {
+        font-size: 14rem;
+      }
+    }
+  }
+
+  &__secondary {
+    display: flex;
+    flex-direction: column;
+    gap: 50rem;
+
+    &-block {
+      display: flex;
+      gap: 40rem;
+
+      @include mobile {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20rem;
+      }
+    }
+
+    &-tag {
+      font-weight: 400;
+      font-size: 18rem;
+      letter-spacing: 0.02em;
+      color: var(--primary-color);
+      background: var(--light-orange);
+      border-radius: 80rem;
+      padding: 4rem 12rem;
+      z-index: 5;
+      max-width: fit-content;
+      transform: translateY(-50rem);
+      margin-left: 20rem;
+
+      @include mobile {
+        font-size: 14rem;
+      }
+    }
+
+    &-title {
+      font-weight: 500;
+      font-size: 22rem;
+      line-height: 180%;
+      color: var(--primary-color);
+      max-width: 477rem;
+
+      @include mobile {
+        font-size: 16rem;
+      }
+    }
+
+    &-desc {
+      font-weight: 400;
+      font-size: 20rem;
+      line-height: 180%;
+      letter-spacing: 0.02em;
+      color: var(--txt-color-3);
+      max-width: 447rem;
+
+      @include mobile {
+        font-size: 14rem;
+      }
+    }
+  }
+
+  &__img {
+    @include tablet {
+      min-width: 245rem;
+    }
+
+    @include mobile {
+      max-width: 200rem;
+    }
+  }
+}

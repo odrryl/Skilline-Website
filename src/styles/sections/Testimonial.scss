@@ -1,0 +1,232 @@
+.testimonial {
+  &__container {
+    padding: 158rem 140rem 150rem 140rem;
+    gap: 60rem;
+    align-items: center;
+    justify-content: space-between;
+
+    @include desktop-small {
+      flex-direction: column;
+      padding-bottom: 90rem;
+    }
+    @include tablet {
+      padding-left: 40rem;
+      padding-right: 40rem;
+    }
+
+    @include mobile {
+      padding-top: 60rem;
+      padding-bottom: 20rem;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+
+    &-title {
+      font-family: var(--second-family);
+      font-weight: 700;
+      font-size: 60rem;
+      color: var(--blue);
+      margin-bottom: 29rem;
+
+      @include tablet {
+        font-size: 40rem;
+      }
+
+      @include mobile {
+        font-size: 28rem;
+      }
+    }
+    &-desc {
+      font-weight: 400;
+      font-size: 26rem;
+      line-height: 160%;
+      letter-spacing: 0.02em;
+      color: var(--txt-color-3);
+      max-width: 607rem;
+      margin-bottom: 26rem;
+
+      @include tablet {
+        font-size: 20rem;
+      }
+
+      @include mobile {
+        font-size: 16rem;
+        margin-bottom: 20rem;
+      }
+    }
+  }
+  &__header {
+    display: flex;
+    gap: 30rem;
+    align-items: center;
+    margin-bottom: 32rem;
+
+    &-title {
+      font-family: var(--second-family);
+      font-weight: 400;
+      font-size: 20rem;
+      letter-spacing: 0.2em;
+      color: var(--testimonial);
+
+      @include mobile {
+        font-size: 18rem;
+      }
+    }
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    gap: 26rem;
+    justify-content: flex-end;
+
+    font-weight: 400;
+    font-size: 22rem;
+    line-height: 160%;
+    letter-spacing: 0.02em;
+
+    width: 403rem;
+    height: 80rem;
+
+    @include mobile {
+      font-size: 16rem;
+      width: 240rem;
+      gap: 10rem;
+      height: 40rem;
+    }
+  }
+
+  &__review {
+    @include desktop-small {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &-img {
+      z-index: -2;
+      border-radius: 20rem;
+      width: 560rem;
+      height: auto;
+
+      @include mobile {
+        display: none;
+      }
+    }
+  }
+}
+
+.line {
+  border: 1rem solid var(--testimonial);
+  width: 80rem;
+  height: 0rem;
+}
+
+.feedback {
+  box-shadow: 2rem 4rem 60rem 0 rgba(41, 44, 124, 0.1);
+  background: var(--white);
+  padding: 41rem 42rem 29rem 41rem;
+  z-index: 5;
+
+  transform: translateX(69rem);
+  margin-top: -200rem;
+  border-radius: 20rem;
+  max-width: 680rem;
+
+  @include desktop {
+    padding: 31rem 32rem 19rem 31rem;
+    transform: scale(0.8);
+  }
+  @include desktop-small {
+    padding: 41rem 42rem 29rem 41rem;
+    min-width: 450rem;
+  }
+
+  @include mobile {
+    display: none;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    gap: 32rem;
+    margin-bottom: 31rem;
+
+    &-line {
+      border: 1px solid var(--line);
+      width: 0rem;
+      height: 139rem;
+    }
+  }
+
+  &__desc {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 22rem;
+    line-height: 180%;
+    letter-spacing: 0.02em;
+    color: var(--txt-color-3);
+    max-width: 534rem;
+
+    @include mobile {
+      font-size: 16rem;
+    }
+  }
+
+  &__reviewer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-name {
+      font-family: var(--second-family);
+      font-weight: 600;
+      font-size: 24rem;
+      line-height: 180%;
+      color: var(--txt-color-3);
+      margin-left: 73rem;
+
+      @include desktop {
+        margin-left: 20rem;
+      }
+
+      @include mobile {
+        font-size: 14rem;
+      }
+    }
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+      gap: 12rem;
+      padding-left: 20rem;
+    }
+
+    &-reliability {
+      font-family: var(--second-family);
+      font-weight: 600;
+      font-size: 18rem;
+      line-height: 180%;
+      letter-spacing: 0.02em;
+      color: var(--txt-color-3);
+
+      @include mobile {
+        font-size: 14rem;
+      }
+    }
+  }
+}
+
+.arrow {
+  @include mobile {
+    width: 40rem;
+  }
+}
+
+.star {
+  @include mobile {
+    width: 20rem;
+  }
+}

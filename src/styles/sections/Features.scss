@@ -1,0 +1,124 @@
+.features {
+  &__container {
+    padding-top: 160rem;
+    flex-direction: column;
+    align-items: center;
+
+    @include tablet {
+      text-align: center;
+    }
+
+    @include mobile {
+      padding-top: 60rem;
+    }
+  }
+
+  &__group {
+    display: flex;
+    margin-top: 84rem;
+    align-items: center;
+    margin-bottom: 160rem;
+    justify-content: space-between;
+    gap: 236rem;
+
+    @include desktop {
+      gap: 40rem;
+      justify-content: center;
+    }
+
+    @include tablet {
+      flex-direction: column;
+      margin-bottom: 60rem;
+    }
+
+    @include mobile {
+      margin-top: 44rem;
+      margin-bottom: 30rem;
+    }
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+      align-items: center;
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 40rem;
+    line-height: 160%;
+    color: var(--blue);
+    max-width: 420rem;
+
+    span {
+      color: var(--orange);
+    }
+
+    @include tablet {
+      font-size: 30rem;
+    }
+
+    @include mobile {
+      font-size: 22rem;
+      max-width: 300rem;
+    }
+  }
+
+  &__desc {
+    font-weight: 400;
+    font-size: 22rem;
+    line-height: 180%;
+    letter-spacing: 0.02em;
+    color: var(--txt-color-3);
+    margin-top: 20rem;
+    max-width: 568rem;
+
+    @include tablet {
+      font-size: 20rem;
+    }
+
+    @include mobile {
+      font-size: 14rem;
+    }
+  }
+
+  &__btn {
+    font-weight: 400;
+    font-size: 24rem;
+    line-height: 180%;
+    letter-spacing: 0.02em;
+    padding: 19rem 38rem;
+
+    @include mobile {
+      max-width: 200rem;
+      font-size: 16rem;
+      padding: 9rem 21rem;
+    }
+  }
+
+  &__img {
+    width: 640rem;
+    height: auto;
+    max-width: 100%;
+    display: block;
+  }
+}
+
+.features__group:nth-child(even) .features__img {
+  order: -1;
+
+  @include tablet {
+    order: 1;
+  }
+}
+
+.group-last {
+  margin-bottom: 106rem;
+
+  @include mobile {
+    margin-bottom: 30rem;
+  }
+}

@@ -1,0 +1,110 @@
+.service {
+  &__container {
+    padding-top: 88rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    @include mobile{
+      padding-top: 40rem;
+    }
+  }
+
+  &__group {
+    display: flex;
+    gap: 60rem;
+    padding-top: 168rem;
+
+    @include tablet {
+      flex-direction: column;
+      gap: 100rem;
+      padding-top: 120rem;
+    }
+  }
+
+  &__block {
+    border-radius: 20rem;
+    box-shadow: 0 10rem 60rem 0 rgba(38, 45, 118, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 43rem 37rem 50rem 37rem;
+
+    @include desktop-small {
+      padding: 33rem 27rem 40rem 27rem;
+    }
+
+    @include tablet {
+      padding: 43rem 37rem 50rem 37rem;
+    }
+
+   
+
+    &-circle {
+      width: 100rem;
+      height: 100rem;
+      background-color: var(--light-blue);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 10rem 40rem 0 rgba(54, 61, 136, 0.06);
+
+      margin-top: -100rem;
+
+      @include mobile{
+        transform: scale(0.8);
+      }
+    }
+
+    &-title {
+      font-weight: 500;
+      font-size: 30rem;
+      text-align: center;
+      color: var(--blue);
+      max-width: 345rem;
+      margin-bottom: 24rem;
+      margin-top: 79rem;
+
+      @include desktop-small {
+        font-size: 24rem;
+        margin-top: 59rem;
+      }
+
+      @include mobile{
+        font-size: 18rem;
+      }
+    }
+
+    &-desc {
+      font-weight: 400;
+      font-size: 20rem;
+      line-height: 180%;
+      text-align: center;
+      color: var(--txt-color-3);
+      max-width: 377rem;
+
+      @include desktop-small {
+        font-size: 18rem;
+      }
+
+      @include mobile{
+        font-size: 14rem;
+      }
+    }
+  }
+}
+
+.service__block:nth-of-type(2) .service__block-circle {
+  background-color: var(--orange);
+  box-shadow: 0 16rem 40rem 0 rgba(37, 44, 113, 0.1);
+}
+
+.service__block:nth-of-type(3) .service__block-circle {
+  background-color: var(--cyan);
+  box-shadow: 0 10rem 40rem 0 rgba(54, 61, 136, 0.06);
+}
+
+#service-desc{
+  max-width: 837rem;
+}

@@ -1,0 +1,134 @@
+.header {
+  background: var(--light-pink);
+
+  &__container {
+    padding-top: 60rem;
+    align-items: center;
+    justify-content: space-between;
+    @include mobile{
+      padding-top: 40rem;
+    }
+  }
+  &__backdrop {
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    transform: translateX(120%);
+    display: none;
+    transition: var(--transition);
+    opacity: 0;
+
+    @include tablet {
+      display: block;
+    }
+
+    &._active {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  &__ul {
+    display: flex;
+    align-items: center;
+    gap: 80rem;
+    z-index: 10;
+    font-weight: 400;
+    font-size: 22rem;
+    letter-spacing: 0.02em;
+    transition: var(--transition);
+
+    @include desktop {
+      gap: 40rem;
+    }
+
+    @include desktop-small {
+      gap: 30rem;
+    }
+
+    @include tablet {
+      z-index: 10;
+      position: fixed;
+      width: 60%;
+      height: 100%;
+      flex-direction: column;
+      left: 0;
+      top: 0;
+      background: var(--primary-color-transparent);
+      align-items: center;
+      justify-content: center;
+      transform: translateX(-120%);
+      transition: var(--transition);
+      gap: 40rem;
+    }
+
+    &._active {
+      transform: translateX(0);
+    }
+
+    .icon-close {
+      position: absolute;
+      top: 40px;
+      right: 40px;
+      color: var(--primary-color);
+    }
+  }
+
+  &__a {
+    transition: var(--transition);
+    @include tablet {
+      color: var(--txt-color-1);
+    }
+  }
+
+  &__a:hover {
+    color: var(--orange);
+  }
+  &__buttons {
+    display: flex;
+    gap: 34rem;
+    font-weight: 500;
+    font-size: 22rem;
+    letter-spacing: 0.02em;
+
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+}
+
+.icon-menu,
+.icon-close {
+  cursor: pointer;
+  display: none;
+
+  @include tablet {
+    display: inline-block;
+  }
+}
+
+.login {
+  color: var(--txt-color-2);
+  background: var(--white);
+  box-shadow: 0 20rem 24rem 0 rgba(0, 0, 0, 0.03);
+  width: 160rem;
+  height: 60rem;
+}
+
+.sign-up {
+  @extend .login;
+  color: var(--white);
+  background: var(--orange);
+
+  @include desktop {
+    display: none;
+  }
+
+  @include tablet {
+    display: flex;
+  }
+}

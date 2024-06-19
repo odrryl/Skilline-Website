@@ -1,0 +1,141 @@
+.home {
+  background: var(--light-pink);
+
+  &__container {
+    padding-top: 134rem;
+    justify-content: space-between;
+    align-items: flex-start;
+   
+
+    @include desktop {
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      padding-top: 35rem;
+    }
+
+    @include tablet {
+      padding-bottom: 80rem;
+    }
+
+    @include mobile{
+      padding-top: 20rem;
+      padding-bottom: 60rem;
+    }
+  }
+
+  &__title {
+    margin-top: 86rem;
+    font-weight: 700;
+    font-size: 54rem;
+    color: var(--blue);
+    margin-bottom: 34rem;
+
+    span {
+      color: var(--orange);
+    }
+
+    @include desktop {
+      font-size: 45rem;
+    }
+
+    @include mobile {
+      font-size: 30rem;
+    }
+  }
+
+  &__desc {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 24rem;
+    line-height: 160%;
+    color: var(--txt-color-4);
+    max-width: 523rem;
+
+    @include mobile {
+      font-size: 18rem;
+      max-width: 400rem;
+    }
+  }
+
+  &__group {
+    display: flex;
+    align-items: center;
+    margin-top: 52rem;
+    gap: 40rem;
+
+    @include desktop {
+      gap: 20rem;
+    }
+
+    @include tablet-small {
+      justify-content: center;
+    }
+
+    @include mobile {
+      transform: scale(0.8);
+    }
+  }
+
+  &__btn {
+    font-weight: 600;
+    font-size: 24rem;
+    color: var(--white);
+    background: var(--orange);
+    min-width: 220rem;
+    min-height: 80rem;
+    padding: 22rem 38rem;
+  }
+
+  &__watch-video {
+    display: flex;
+    align-items: center;
+    gap: 32rem;
+  }
+
+  &__img {
+    padding-left: 30rem;
+
+    @include desktop-large {
+      width: 50%;
+      height: auto;
+      max-width: 100%;
+      display: block;
+    }
+
+    @include tablet {
+      display: none;
+    }
+  }
+}
+
+.play {
+  min-width: 80rem;
+  min-height: 80rem;
+  background-color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 20px 60px 0 rgba(61, 155, 185, 0.1);
+  transition: var(--transition);
+
+  &-desc {
+    font-weight: 400;
+    font-size: 24rem;
+    color: var(--primary-color);
+
+    @include tablet-small {
+      display: none;
+    }
+  }
+
+  &-arrow {
+    margin-left: 5rem;
+  }
+}
+
+.play:hover {
+  transform: scale(0.9);
+}

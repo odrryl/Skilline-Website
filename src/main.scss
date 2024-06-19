@@ -1,0 +1,21 @@
+// vendors
+@import 'styles/vendors/reset';
+
+// utils
+@import 'styles/utils/vars';
+@import 'styles/utils/mixins';
+
+// layout
+@import 'styles/layout/base';
+@import 'styles/layout/scroll';
+@import 'styles/layout/grid';
+
+//sections
+@import 'styles/sections/Header.scss';
+@import 'styles/sections/Home.scss';
+@import 'styles/sections/Service.scss';
+@import 'styles/sections/About.scss';
+@import 'styles/sections/Features.scss';
+@import 'styles/sections/Testimonial.scss';
+@import 'styles/sections/News.scss';
+@import 'styles/sections/Footer.scss';

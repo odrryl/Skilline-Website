@@ -1,0 +1,150 @@
+.footer {
+  background: var(--primary-color);
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 74rem;
+    align-items: center;
+    padding-bottom: 40rem;
+  }
+  &__outro {
+    display: flex;
+    align-items: center;
+    gap: 41rem;
+    margin-bottom: 95rem;
+
+    &-title {
+      font-weight: 600;
+      font-size: 22rem;
+      letter-spacing: 0.04em;
+      color: var(--white);
+
+      @include mobile {
+        font-size: 20rem;
+      }
+    }
+  }
+
+  &__subscribe {
+    &-title {
+      font-weight: 500;
+      font-size: 26rem;
+      letter-spacing: 0.04em;
+      text-align: center;
+      color: var(--txt-color-1);
+      margin-bottom: 20rem;
+
+      @include mobile {
+        font-size: 22rem;
+      }
+    }
+  }
+
+  &__group {
+    display: flex;
+    gap: 20rem;
+    margin-top: 96rem;
+    align-items: center;
+    @include tablet {
+      gap: 10rem;
+    }
+    @include mobile {
+      flex-direction: column;
+      gap: 20rem;
+    }
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: 22rem;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: var(--txt-color-1);
+
+    @include tablet {
+      font-size: 18rem;
+    }
+    @include mobile {
+      font-size: 14rem;
+    }
+  }
+}
+
+.separator {
+  border: 1rem solid var(--txt-color-3);
+  width: 83rem;
+  height: 0rem;
+  transform: rotate(-90deg);
+}
+
+.subscribe-form {
+  display: flex;
+  gap: 20rem;
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__input {
+    background: transparent;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20rem;
+    letter-spacing: 0.04em;
+    color: var(--txt-color-3);
+
+    border: 1px solid var(--txt-color-3);
+    border-radius: 80rem;
+    padding: 15rem 30rem;
+
+    width: 100%;
+    max-width: 400rem;
+    box-sizing: border-box;
+
+    &::placeholder {
+      color: var(--txt-color-3);
+    }
+  }
+
+  &__btn {
+    font-weight: 500;
+    font-size: 22rem;
+    color: var(--white);
+
+    background: linear-gradient(157deg, #545ae7 0%, #393fcf 100%);
+    border-radius: 60rem;
+
+    padding: 14rem 34rem;
+    max-width: 179rem;
+
+    @include mobile {
+      font-size: 18rem;
+      padding: 7rem 22rem;
+    }
+  }
+}
+
+.copyright {
+  margin-top: 20rem;
+  font-weight: 400;
+  font-size: 22rem;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: var(--txt-color-1);
+
+  @include tablet {
+    font-size: 18rem;
+    margin-top: 40rem;
+  }
+  @include mobile {
+    font-size: 12rem;
+  }
+}
+
+.link-separator {
+  @include mobile {
+    display: none;
+  }
+}
