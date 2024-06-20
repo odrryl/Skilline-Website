@@ -12,7 +12,7 @@
         <ul class="header__ul" id="headerUl">
           <li class="header__li"><a class="header__a" href="#home">Home</a></li>
           <li class="header__li">
-            <a class="header__a" href="/">Careers</a>
+            <a class="header__a" href="#features">Features</a>
           </li>
           <li class="header__li">
             <a class="header__a" href="#blog">Blog</a>

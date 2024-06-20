@@ -1,9 +1,9 @@
 <script setup>
-import PlayIcon from '@/components/icons/PlayIcon.vue'
+import PlayIcon from '@/components/icons/PlayIcon.vue';
 </script>
 
 <template>
-  <section class="about" id="about">
+  <section v-intersect class="about" id="about">
     <div class="container about__container">
       <h3 class="title">What is <span>Skilline?</span></h3>
       <p class="desc" id="about-desc">
@@ -15,12 +15,12 @@ import PlayIcon from '@/components/icons/PlayIcon.vue'
       <div class="about__choise">
         <div class="about__choise-block" id="instructor">
           <h4 class="about__choise-block-title">FOR INSTRUCTORS</h4>
-          <a href="/" class="btn-1 btn-instructor">Start a class today</a>
+          <a href="/" class="btn-1 btn-instructor heartbeat">Start a class today</a>
         </div>
 
         <div class="about__choise-block" id="student">
           <h4 class="about__choise-block-title">FOR STUDENTS</h4>
-          <a href="/" class="btn-1 btn-student">Enter access code</a>
+          <a href="/" class="btn-1 btn-student heartbeat">Enter access code</a>
         </div>
       </div>
 

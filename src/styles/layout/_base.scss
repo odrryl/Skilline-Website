@@ -33,10 +33,19 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  -webkit-tap-highlight-color: transparent;
+}
 
-
- 
-
+.btn-1:active,
+.btn-1:focus,
+.btn-1:focus-visible,
+.btn-2:active,
+.btn-2:focus,
+.btn-2:focus-visible,
+.play:active,
+.play:focus,
+.play:focus-visible {
+  outline: none;
 }
 
 .btn-1:hover,
@@ -49,8 +58,6 @@ body {
   font-family: var(--second-family);
   border: 1rem solid var(--orange);
   color: var(--orange);
-
-  
 }
 
 a {
@@ -69,6 +76,10 @@ a {
 
   @include desktop {
     transform: scale(0.9);
+  }
+
+  @include mobile{
+    transform: scale(0.7);
   }
 
   &-txt {
@@ -93,25 +104,6 @@ a {
   }
 }
 
-.logo-footer {
-  display: flex;
-  align-items: center;
-
-  &-txt {
-    margin-left: 0rem;
-    font-weight: 700;
-    font-size: 32rem;
-    letter-spacing: 0.04em;
-    color: var(--white);
-    margin-left: -55rem;
-  }
-
-  &-img {
-    width: 83rem;
-    height: 83rem;
-  }
-}
-
 .title {
   font-weight: 700;
   font-size: 36rem;
@@ -125,7 +117,8 @@ a {
   }
 
   @include mobile {
-    font-size: 28rem;
+    font-size: 24rem;
+    margin-bottom: 10rem;
   }
 }
 
@@ -136,8 +129,51 @@ a {
   text-align: center;
   color: var(--txt-color-2);
   text-align: center;
-
   @include mobile {
     font-size: 16rem;
   }
+}
+
+
+
+.play {
+  min-width: 80rem;
+  min-height: 80rem;
+  background-color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 20px 60px 0 rgba(61, 155, 185, 0.1);
+  transition: var(--transition);
+  -webkit-tap-highlight-color: transparent;
+
+  &-desc {
+    font-weight: 400;
+    font-size: 24rem;
+    color: var(--primary-color);
+
+    @include tablet-small {
+      display: none;
+    }
+  }
+
+  &-arrow {
+    margin-left: 5rem;
+  }
+}
+
+.play:hover {
+  transform: scale(0.9);
+}
+
+section {
+  opacity: 0;
+  transform: translateY(100rem);
+  transition: opacity 0.9s ease-out, transform 1.1s ease-out;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
 }

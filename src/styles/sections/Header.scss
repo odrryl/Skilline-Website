@@ -1,6 +1,7 @@
 .header {
   background: var(--light-pink);
 
+
   &__container {
     padding-top: 60rem;
     align-items: center;
@@ -53,7 +54,7 @@
     @include tablet {
       z-index: 10;
       position: fixed;
-      width: 60%;
+      width: 75%;
       height: 100%;
       flex-direction: column;
       left: 0;
@@ -64,6 +65,10 @@
       transform: translateX(-120%);
       transition: var(--transition);
       gap: 40rem;
+    }
+
+    @include mobile{
+      font-size: 18rem;
     }
 
     &._active {
@@ -97,6 +102,11 @@
 
     @include tablet {
       flex-direction: column;
+      gap:30rem;
+    }
+
+    @include mobile {
+      gap:10rem;
     }
   }
 }
@@ -117,6 +127,10 @@
   box-shadow: 0 20rem 24rem 0 rgba(0, 0, 0, 0.03);
   width: 160rem;
   height: 60rem;
+
+  @include mobile{
+    transform: scale(0.7)
+  }
 }
 
 .sign-up {

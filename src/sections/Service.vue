@@ -5,7 +5,7 @@ import TrackIcon from '@/components/icons/TrackIcon.vue'
 </script>
 
 <template>
-  <section class="service">
+  <section v-intersect class="service">
     <div class="container service__container">
       <h3 class="title">All-In-One <span>Cloud Software.</span></h3>
       <p class="desc" id="service-desc">

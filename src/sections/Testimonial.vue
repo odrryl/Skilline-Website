@@ -3,7 +3,7 @@ import ArrowIcon from '@/components/icons/ArrowIcon.vue'
 import StarIcon from '@/components/icons/StarIcon.vue'
 </script>
 <template>
-  <section class="testimonial">
+  <section v-intersect class="testimonial">
     <div class="container testimonial__container">
       <div class="testimonial__info">
         <div class="testimonial__header">

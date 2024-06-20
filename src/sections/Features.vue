@@ -1,6 +1,6 @@
 <script setup></script>
 <template>
-  <section class="features">
+  <section v-intersect class="features" id="features">
     <div class="container features__container">
       <h3 class="title">Our <span>Features</span></h3>
       <p class="desc">

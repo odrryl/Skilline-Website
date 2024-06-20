@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <section class="news" id="blog">
+  <section v-intersect class="news" id="blog">
     <div class="container news__container">
       <h3 class="title">Lastest News and Resources</h3>
       <p class="desc">See the developments that have occurred to Skillines in the world</p>
