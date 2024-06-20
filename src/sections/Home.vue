@@ -1,5 +1,5 @@
 <script setup>
-import PlayIcon from '@/components/icons/PlayIcon.vue';
+import PlayIcon from '@/components/icons/PlayIcon.vue'
 </script>
 <template>
   <section class="home">
@@ -17,14 +17,18 @@ import PlayIcon from '@/components/icons/PlayIcon.vue';
           <a href="/" class="btn-1 home__btn pulsate-fwd">Join for free</a>
           <div class="home__watch-video">
             <a class="play" href="/">
-             <PlayIcon />
+              <PlayIcon />
             </a>
             <p class="play-desc">Watch how it works</p>
           </div>
         </div>
       </div>
 
-      <img src="/assets/img/home_section/student.png" alt="Preview" class="home__img scale-in-center " />
+      <img
+        src="/assets/img/home_section/student.png"
+        alt="Preview"
+        class="home__img scale-in-center"
+      />
     </div>
   </section>
 </template>

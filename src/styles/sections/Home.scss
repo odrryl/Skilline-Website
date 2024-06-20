@@ -7,7 +7,6 @@
     padding-top: 134rem;
     justify-content: space-between;
     align-items: flex-start;
-   
 
     @include desktop {
       align-items: center;
@@ -21,7 +20,7 @@
       padding-bottom: 80rem;
     }
 
-    @include mobile{
+    @include mobile {
       padding-top: 20rem;
       padding-bottom: 60rem;
     }
@@ -77,7 +76,7 @@
     }
 
     @include mobile {
-      transform: scale(0.8);
+      gap: 30rem;
     }
   }
 
@@ -89,6 +88,13 @@
     min-width: 220rem;
     min-height: 80rem;
     padding: 22rem 38rem;
+
+    @include mobile {
+      min-width: 0;
+      min-height: 0;
+      padding: 16rem 20rem;
+      font-size: 20rem;
+    }
   }
 
   &__watch-video {
