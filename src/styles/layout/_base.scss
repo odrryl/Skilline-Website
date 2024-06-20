@@ -64,6 +64,7 @@ a {
   cursor: pointer;
   text-decoration: none;
   color: var(--primary-color);
+  -webkit-tap-highlight-color: transparent;
 }
 * {
   margin: 0;
@@ -73,6 +74,7 @@ a {
 .logo {
   display: flex;
   align-items: center;
+  -webkit-tap-highlight-color: transparent;
 
   @include desktop {
     transform: scale(0.9);
@@ -183,4 +185,7 @@ section {
 section.visible {
   opacity: 1;
   transform: translateY(0);
+}
+.link {
+  -webkit-tap-highlight-color: transparent;
 }

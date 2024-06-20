@@ -1,5 +1,5 @@
 <script setup>
-import PlayIcon from '@/components/icons/PlayIcon.vue';
+import PlayIcon from '@/components/icons/PlayIcon.vue'
 </script>
 
 <template>
@@ -34,11 +34,15 @@ import PlayIcon from '@/components/icons/PlayIcon.vue';
             scheduling, attendance, payments and virtual classrooms all in one secure cloud-based
             system.
           </p>
-          <a href="/" class="about__link">Learn more</a>
+          <a href="/" class="link about__link">Learn more</a>
         </div>
 
         <div class="about__img-container">
-          <img src="/assets/img/about_section/class_meeting.png" alt="Class Meeting" class="about__img" />
+          <img
+            src="/assets/img/about_section/class_meeting.png"
+            alt="Class Meeting"
+            class="about__img"
+          />
           <a class="play" href="/" id="play-icon">
             <PlayIcon />
           </a>
