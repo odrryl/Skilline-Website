@@ -3,8 +3,8 @@
     padding-top: 158rem;
     flex-direction: column;
     align-items: center;
-   
-    @include mobile{
+
+    @include mobile {
       padding-top: 50rem;
     }
   }
@@ -25,14 +25,14 @@
       gap: 30rem;
     }
 
-    @include mobile{
+    @include mobile {
       margin-top: 40rem;
       gap: 20rem;
       margin-bottom: 50rem;
     }
 
     &-block {
-     width: 100%;
+      width: 100%;
       padding: 132rem 154rem 123rem 154rem;
       border-radius: 20rem;
       background-size: cover;
@@ -41,19 +41,16 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      box-sizing: border-box; 
+      box-sizing: border-box;
 
-     @include tablet{
-   
-      padding: 90rem 100rem 80rem 100rem;
-     }
+      @include tablet {
+        padding: 90rem 100rem 80rem 100rem;
+      }
 
-     @include mobile{
-
-      padding: 70rem 30rem 60rem 30rem;
-      transform: scale(0.9);
-      
-     }
+      @include mobile {
+        padding: 70rem 30rem 60rem 30rem;
+        transform: scale(0.9);
+      }
 
       &-title {
         font-weight: 600;
@@ -63,7 +60,7 @@
         margin-top: 20rem;
         min-width: 292rem;
 
-        @include mobile{
+        @include mobile {
           font-size: 28rem;
         }
       }
@@ -77,12 +74,12 @@
     color: var(--blue);
     max-width: 655rem;
     margin-bottom: 30rem;
-  
+
     span {
       color: var(--orange);
     }
 
-    @include mobile{
+    @include mobile {
       font-size: 22rem;
       margin-bottom: 20rem;
     }
@@ -96,8 +93,8 @@
     color: var(--txt-color-3);
     max-width: 700rem;
     margin-bottom: 30rem;
-    
-    @include mobile{
+
+    @include mobile {
       font-size: 16rem;
     }
   }
@@ -110,10 +107,9 @@
     text-decoration-skip-ink: none;
     color: var(--txt-color-3);
 
-    @include mobile{
+    @include mobile {
       font-size: 14rem;
     }
-   
   }
 
   &__group {
@@ -149,6 +145,13 @@
   margin-top: 17rem;
   min-width: 283rem;
   height: 80rem;
+  border-radius: 80rem;
+  -webkit-tap-highlight-color: transparent;
+  transition: var(--transition);
+
+  @include mobile {
+    transform: scale(0.8);
+  }
 }
 
 .btn-student {
@@ -175,4 +178,3 @@
 #about-desc {
   max-width: 1101rem;
 }
-
