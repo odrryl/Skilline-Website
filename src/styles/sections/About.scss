@@ -135,6 +135,7 @@
 }
 
 .btn-instructor {
+  @extend .btn-1;
   font-weight: 500;
   font-size: 22rem;
   text-align: center;
@@ -145,9 +146,6 @@
   margin-top: 17rem;
   min-width: 283rem;
   height: 80rem;
-  border-radius: 80rem;
-  -webkit-tap-highlight-color: transparent;
-  transition: var(--transition);
 
   @include mobile {
     transform: scale(0.8);
